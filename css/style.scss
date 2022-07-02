@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+$primaryColor: #11324d;
+$secondaryColor: rgba(255, 255, 255, 0.1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryColor;
+  .cardWrapper {
+    max-width: 600px;
+    max-height: 600px;
+    .cardContainer {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 1em;
+      background-color: $secondaryColor;
+      overflow: hidden;
+      .productImage {
+        padding: 1em;
+        margin: 0 auto;
+        background-color: white;
+        img {
+          width: 300px;
+          height: 200px;
+          object-fit: contain;
+          margin-left: 2.5em;
+        }
+      }
+      .productTitle {
+        text-align: center;
+        color: white;
+      }
+      .addToCartButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em auto 2em;
+        background-color: #6b7aa1;
+        border-radius: 1em;
+        border: 0;
+        h3 {
+          display: inline-block;
+          font-family: "Poppins", sans-serif;
+          padding: 0.6em;
+          font-size: 1.3em;
+          color: white;
+        }
+        ion-icon {
+          color: #c1cfc0;
+          font-size: 2.8em;
+          padding: 0 0.2em 0;
+        }
+      }
+    }
+  }
+}
